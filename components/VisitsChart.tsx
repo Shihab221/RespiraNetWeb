@@ -8,7 +8,7 @@ type VisitData = {
 
 const VisitsChart = ({ data }: { data: VisitData[] }) => {
   return (
-    <div className="w-full h-96 p-4 bg-[#221112] rounded-2xl  py-10">
+    <div className="w-full h-96 p-4 bg-[#00ffff] rounded-2xl  py-10">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data}>
           

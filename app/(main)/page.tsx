@@ -148,7 +148,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-10 text-center text-[#cc8e99] text-sm">
-        © 2025 AnemoScan. All rights reserved.
+        © 2025 RespiraNet+. All rights reserved.
       </footer>
     </div>
   );

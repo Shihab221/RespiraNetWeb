@@ -9,7 +9,7 @@ import useTrackVisit from "@/hooks/useTrackVisit";
 export default function About() {
   useTrackVisit();
   return (
-    <div className="min-h-screen flex flex-col bg-[#221112] text-white ">
+    <div className="min-h-screen flex flex-col bg-[#00ffff] text-white ">
       {/* Navbar (full width) */}
       {/* <header className="flex items-center justify-between border-b border-[#472426] px-6 lg:px-10 py-3">
         <div className="flex items-center gap-3">
@@ -175,7 +175,7 @@ export default function About() {
 
       {/* Footer */}
       <footer className="py-6 text-center text-[#c89295] text-sm">
-        © 2025 AnemoScan. All rights reserved.
+        © 2025 RespiraNet+. All rights reserved.
       </footer>
     </div>
   );
