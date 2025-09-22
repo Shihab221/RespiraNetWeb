@@ -10,7 +10,7 @@ export default function Home() {
     await fetch("/api/download", { method: "POST" });
 
     // direct Google Drive download link (from the link you gave)
-    const directLink = "https://github.com/Shihab221/apk_host/releases/download/app/app-release.apk";
+    const directLink = "https://github.com/Shihab221/apk_host/releases/download/app/app-release-respiranet.apk";
 
     // create hidden <a> to force browser download/save
     const a = document.createElement("a");
