@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     }
 
     const client = await clientPromise;
-    const db = client.db("anemoscan");
+    const db = client.db("RespiranetWeb");
     const collection = db.collection("visits");
 
     // Add user IP for basic analytics (consider privacy regulations)

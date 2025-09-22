@@ -37,7 +37,7 @@ import clientPromise from "@/lib/mongodb";
 export async function GET() {
   try {
     const client = await clientPromise;
-    const db = client.db("anemoscan");
+    const db = client.db("RespiranetWeb");
     const collection = db.collection("visits");
 
     const downloads = await collection.countDocuments({ type: "download" });

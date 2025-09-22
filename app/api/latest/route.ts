@@ -4,7 +4,7 @@ import clientPromise from "@/lib/mongodb";
 
 export async function GET() {
   const client = await clientPromise;
-  const db = client.db("anemoscan");
+  const db = client.db("RespiranetWeb");
 
   // Merge visits + downloads into one list
   const visits = await db.collection("visits")

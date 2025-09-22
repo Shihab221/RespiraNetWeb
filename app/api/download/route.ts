@@ -4,7 +4,7 @@ import clientPromise from "@/lib/mongodb";
 export async function POST() {
   try {
     const client = await clientPromise;
-    const db = client.db("anemoscan"); // your DB name
+    const db = client.db("RespiranetWeb"); // your DB name
     const collection = db.collection("visits");
 
     // insert a new visit record

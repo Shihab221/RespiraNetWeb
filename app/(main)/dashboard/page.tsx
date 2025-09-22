@@ -17,8 +17,8 @@ export default function DashboardPage() {
     <div className="p-6 bg-[#0d1225] text-white min-h-screen flex flex-col lg:flex-row gap-6 lg:gap-10 px-4 lg:px-40">
       {/* sidebar */}
       <div className="w-full lg:w-1/5 flex flex-col items-start p-4 h-fit  rounded-lg">
-        <h4 className="text-xl font-bold mb-4">AnemoScan Admin</h4>
-        <button className="flex flex-row w-full items-center gap-2 bg-[#e53e3e] p-2 px-4 rounded-lg text-sm">
+        <h4 className="text-xl font-bold mb-4">RespiraNet+ Admin</h4>
+        <button className="flex flex-row w-full items-center gap-2 bg-[#2dcce8] p-2 px-4 rounded-lg text-sm text-black">
           <FaHome size={20} />
           Dashboard
         </button>
@@ -30,19 +30,19 @@ export default function DashboardPage() {
         
         {/* Stats */}
         <div className="flex flex-col lg:flex-row gap-4 mb-6">
-          <div className="flex flex-col gap-2 items-start bg-[#351918] p-4 py-5 rounded-md w-full lg:w-56">
+          <div className="flex flex-col gap-2 items-start bg-[#0c1e2e] p-4 py-5 rounded-md w-full lg:w-56">
             <p className="text-gray-300">Total APK Downloads</p>
             <p className="text-2xl font-bold">{data.downloads}</p>
           </div>
-          <div className="flex flex-col gap-2 items-start bg-[#351918] p-4 py-5 rounded-md w-full lg:w-56">
+          <div className="flex flex-col gap-2 items-start bg-[#0c1e2e] p-4 py-5 rounded-md w-full lg:w-56">
             <p className="text-gray-300">Total Visits</p>
             <p className="text-2xl font-bold">{data.totalVisits}</p>
           </div>
-          <div className="flex flex-col gap-2 items-start bg-[#351918] p-4 py-5 rounded-md w-full lg:w-56">
+          <div className="flex flex-col gap-2 items-start bg-[#0c1e2e] p-4 py-5 rounded-md w-full lg:w-56">
             <p className="text-gray-300">Visits Today</p>
             <p className="text-2xl font-bold">{data.visitsToday}</p>
           </div>
-          <div className="flex flex-col gap-2 items-start bg-[#351918] p-4 py-5 rounded-md w-full lg:w-56">
+          <div className="flex flex-col gap-2 items-start bg-[#0c1e2e] p-4 py-5 rounded-md w-full lg:w-56">
             <p className="text-gray-300">Region</p>
             <p className="text-2xl font-bold">Asia</p>
           </div>
@@ -60,9 +60,9 @@ export default function DashboardPage() {
         {/* Latest Activity */}
         <div className=" rounded-lg py-6">
           <h2 className="text-xl font-semibold mb-4">Recent Downloads/Visits</h2>
-          <table className="w-full border-collapse border border-[#503130] text-sm text-[#cb9193]">
+          <table className="w-full border-collapse border border-[#43888a] text-sm text-[#2dcce8]">
             <thead>
-              <tr className="bg-[#351918] text-left text-gray-300">
+              <tr className="bg-[#0c1e2e] text-left text-gray-300">
                 <th className="p-3">Date</th>
                 <th className="p-3">Time</th>
                 <th className="p-3">Type</th>
@@ -75,7 +75,7 @@ export default function DashboardPage() {
                 const date = dateObj.toLocaleDateString();
                 const time = dateObj.toLocaleTimeString();
                 return (
-                  <tr key={action.id} className="border-b border-[#503130] hover:bg-[#351918]">
+                  <tr key={action.id} className="border-b border-[#43888a] hover:bg-[#0c1e2e]">
                     <td className="p-3">{date}</td>
                     <td className="p-3">{time}</td>
                     <td className="p-3">

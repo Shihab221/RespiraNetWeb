@@ -12,10 +12,10 @@ const VisitsChart = ({ data }: { data: VisitData[] }) => {
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data}>
           
-          <XAxis dataKey="date" stroke="#ffd3bdff" />
-          <YAxis stroke="#ffd3bdff" />
+          <XAxis dataKey="date" stroke="#2cc8e3" />
+          <YAxis stroke="#2cc8e3" />
           <Tooltip />
-          <Line type="monotone" dataKey="visits" stroke="#ffd3bdff" strokeWidth={3} dot={{ r: 5 }} activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="visits" stroke="#2cc8e3" strokeWidth={3} dot={{ r: 5 }} activeDot={{ r: 8 }} />
         </LineChart>
       </ResponsiveContainer>
     </div>
