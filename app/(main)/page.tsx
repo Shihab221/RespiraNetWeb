@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#231013] text-white ">
+    <div className="min-h-screen flex flex-col bg-[#0a1020] text-white ">
      
      
 
@@ -31,16 +31,16 @@ export default function Home() {
         className="flex flex-col items-center justify-center text-center px-4 py-36 bg-cover bg-center"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url('https://lh3.googleusercontent.com/aida-public/AB6AXuBM-Lv1-BGL46hAfL3G7OyVfDjdAZpLlUG5sWCsg3BYXCfAeSIxzbOanZ7FsYd-Jxi5-nfHLXtxpiq29QjUj5AqDumxWXypGaJxM2JaFTzNdImrFut8qXLioUxLis7WNZATEciufEfkGl-ccBxUDeZoDgktULqxZSh8OoRrQRt-bflb58vnfDz8LnRdxnCUl0vX_6rdhkYQK1BPNfXE15dR1ARIAhawDepQgR7zzE_jMlwan907XLNPrlqHfksrgVffWQo6-_uzrEs')",
+            "url('/hero.jpg')",
         }}
       >
         <h1 className="text-3xl sm:text-5xl font-black max-w-2xl">
-          Illuminating Health: Anemia Detection Reimagined
+          RespiraNet+
         </h1>
         <p className="mt-3 text-sm sm:text-base max-w-xl">
-          AnemoScan uses AI to analyze eye conjunctiva images for anemia, offline and privately.
+          AI-powered respiratory health screening using cough audio, chest X-ray images, and symptoms.
         </p>
-        <button className="mt-6 bg-[#af0421] px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-bold text-sm sm:text-base cursor-pointer hover:bg-[#e53e3e] text-white"
+        <button className="mt-6 bg-[#2dcce8] px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-bold text-sm sm:text-base cursor-pointer hover:bg-[#2dcce8] hover:opacity-90 text-white"
         onClick={
           handleDownload
         }
@@ -52,80 +52,105 @@ export default function Home() {
       {/* Reusable Card Grid */}
       {[
         {
-          title: "Key Features",
-          items: [
-            {
-              title: "Conjunctiva Capture",
-              desc: "Capture clear images of the eye's conjunctiva with ease.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD-4c0rf-pljEekQPjAV2ylR5ZFAgsV7Tl1JvcITOTrnhlDgkkMEbz904IC7RGzUgfCscEJBBX9vCXziFyAqFUmMJsPXhsobnyGrmV2svUE9KDR6kq2rKIkD175Ew0qmWwFd556C6iInmYHhblSRcYFpGyrxTVldScj5ECvBdq3_jE2Ea2V2-R1qfWizvqpvaBqt8g4ctRTq4dtAk3vUd1WobkdJ-n3RdQp7VfEYeDm0yMkeMZ0qHXoOh3eo8s-sEHWP2tLtmmoUV4",
-            },
-            {
-              title: "One-tap Simplicity",
-              desc: "Detect anemia with a single tap, no complex procedures.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC4i0ezgaWeoxRxbk3MG2hdv29WD55TedReD4s9j60aa2XC6cc3cu6k_WwZlc0qCv1aDNGzP2mQ8hCCQtUvXO8f6UneIeCSQ-lcOAcJpD_1lCG2-eRLCvYSiBNka8tGA_-Bs4cPBswvRH9lKv3vcX5Gl_BDwEnkrkEBRcEmrlkt_UvJu7kgJuykn1PzpG77L8oGqkrcQ28dRxP6tA7mPoXBY8Yb9MOlZsjo26LqN3u4sXIHVy4_Cz5IY7x3hUaRcfYWk0_IMiMwWyM",
-            },
-            {
-              title: "On-device AI",
-              desc: "AI analysis happens directly on your device, ensuring privacy.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAhEEx1tNctIDhM4xN3iDT4AEOx-GPXA1O-ZfaSuJ5rrV2Mu4tvRWP2tfRFZLsi839kaRhxLRemhr9SP1ACZe_gh1GknVfiLYH67MvIKYaF7RZuuNpkfTQvdSLGN182-OV4_1D7Bv0OqBeY6NUVX4R6vdrKGBlMag1F3z9H8RllPF8SoGMzp6kE7uFrZYH_zDyldVurHL-7OrsHFx3Aiwwtf8bn0-6qAP1TrD1jK6lyxqM-SxdRtmsC3CkB27JJ0UwuiPbkvK_gFbU",
-            },
-            {
-              title: "Empowering Communities",
-              desc: "Make anemia detection accessible to everyone, everywhere.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD1VT-MHAXdwcqxwdGDCCfhko09GkwC-DM07QxSBeV3lbHIVO1quBaCYPy4dDZMEs2DfRK4737cn8B5rEMzCfj9L1VEyptTPUCtzVAfdekC9zZ1a2YtitKmYv4XMrR2UuaMqfhTbE6FvPZpPAfcI1OrZTUCRTXo-dbvnge_rG-1S3_wj4BSngq0A79RPQG3La7O-rBmI-_ckaCmNM81tpq2NRWLjePB4vhiX2UWOy0NEV7lMXgCWbwmvBV7NrYa_40GNfV5eZ9Khmw",
-            },
-          ],
-        },
+  title: "Comprehensive Screening Features",
+  items: [
+    {
+      title: "Multimodal Screening",
+      desc: "Analyze cough audio, facial/thermal images, and symptoms with our sophisticated AI to provide a comprehensive preliminary screening.",
+      img: "/multimodal.jpg",
+    },
+    {
+      title: "Cloud-Based AI Engine",
+      desc: "Leveraging a secure, scalable cloud infrastructure, our AI engine processes data with maximum efficiency and security.",
+      img: "/cloud.jpg",
+    },
+    {
+      title: "Real-Time Triage",
+      desc: "Receive immediate feedback with clear urgency levels, helping you understand the potential severity and advised next steps.",
+      img: "/realtime.jpg",
+    },
+    {
+      title: "Actionable Next Steps",
+      desc: "Get personalized guidance to nearby clinics, telehealth options, and downloadable reports to share with healthcare professionals.",
+      img: "/nextstep.jpg",
+    },
+    {
+      title: "Privacy & Encryption",
+      desc: "Your data is yours. We employ end-to-end encryption and give you full control over your personal information.",
+      img: "/privacy.jpg",
+    }
+  ],
+},
         {
-          title: "New Features",
-          items: [
-            {
-              title: "Saves and Deletes History",
-              desc: "Keep track of your past scans and monitor changes over time.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCydaTmnhCtFxdffzX2X9y_s-eqVrIgKScBOetQzRBA3fhPIOxBq08A5YMQ0pXhvk4BJ6hrTrQJnpKq984qrS1UOkWxZzxL5v4Q_neSyCHgnP_weFk7_fV8XNiHwptTr1R8h3kSogg8sTcaI9Wnrf2on7HqE5JPdLGM0LrxaSQvIftJl93vWzExRZjgCoLiFyY8ISqOi_LjmU4d09lfuCfyPgKlw01jZL1yfNnQWCk_oV8U5kuWu96Khxr4znLI_eshYZR5oC5-FW4",
-            },
-            {
-              title: "Shows Confidence Level",
-              desc: "Understand the reliability of each result with a confidence score.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCLxJOv5cQoIrsDhDPSpOELLqysvIyb9NtuI5Wkely8HU1k6I4yaWZ5YG9zn9i-WvNZjra3sFem6W6Tz5VrrQAM6us1jCqQxIuDAf9gTsv-MeiohZsWzuVQCf4VtLb40BWYVtznIQsqhN_GhkggXmU3GjknydyW48Vdx2MG0BoVuXZISJu3_dpD6_ykpd7RhYXfnr18Of-WL3HlAYrzL-vMppGlhrJmD7nYb2wImo4e8Wky54NA0krDWJQHR7fywTtAERjUNF3NaBk",
-            },
-            {
-              title: "Integrated Camera",
-              desc: "Use the built-in camera for seamless and quick image capture.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuA63sag9bhcwyVyNP09BetrGJN3vOUE84qYktXwEC7Qp8zthXnzfnqJSkp1R_vr5UEHJo1qjCx3qSCjAuRE7X6X7RmOnf69TjwYlwAFRUAcuKiwdl_JJ_YQityg54eKUor6oWsUjDmOUPf4oyLPjCNBuRnVTHnL7zN9Hrb8hTrGF2tGad9RgxX-Zkh66awqCjk_1KnhsLZuBBx_q_qgKS1I9YCTniQj8RVA8VuCrpsbPxs_NOGbuUkE62xDt707VvtITKEkBpCpxAw",
-            },
-            {
-              title: "Export PDF Feature",
-              desc: "Generate PDF reports of your scan results.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDY46IhNzXihdu3gsr99kuY1nBiZckXBkl103zuRu_3ocyA13Op3_6sK9IqlcSqKaG6Z4srp9JajRreZMarNpfc2bGec5rE4eklGGOEpVwmmR7n0IAuCQf9-cOVIMxWtQIkvHQVG0iLVGnWjbyKSqOwCle3TEhRl2pwnFPdo2hSw0oFG0R187Z1LRo5jrs3pixRb2KYLAIs_PDskm43NaOgS-6AnyyV_vNjq1z5_EO72IHFNeI1RsxpSrPGOAl6jbEP8mvEPusrFTg",
-            },
-          ],
-        },
-        {
-          title: "Vision for the Future",
-          items: [
-            {
-              title: "Accessibility",
-              desc: "Offline-first design empowers remote communities.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDzrHVOMozvTL1gI3V3QbyNd1-jQU_sREUEBzykdRYT_HQfXEGC1yMk62irSdzn1ruk-lrH4CAUm_xLPQUITpLx3PVNZB7iuQUBuNDgC5gN0uoX7H5jsSGnPp5yod2htfeTFMvyCcJ6ceWY7qzOl7lJED9Xjc6IPwGZmor6cEojfmOr9Q9mCAu0g7D6Os9Uu_EqfUjD7bwde6i5vmh1kLA_CbnYo5NNO1ilwkdqgo6TvrHOIuBJWykqNlnOCgApBHMd6dTBU5lAqwk",
-            },
-            {
-              title: "Trust",
-              desc: "100% on-device analysis ensures privacy.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCNkpnQg9WM_DfRWVrkWfqq-Gm0RGOTYmKZ2qG5qDQ6aP6Z3fy7Rvtq3Zm6RmRUDmgzvtc1znYPz9zdVPufL0fEV2jJbolTlJuYrfCJzfE28tjUnCr7EjbZBb_aiWAie3qNbzzEaGOA2Rd7YxdFWBu3GUtaxoFNgELbii6LngPDZX_TUWksTQF6jBeqcVotAEPZW1iNGChEIwqdrFd95ANDGvas8tbaYdCjvop1fWRsjJ89eQOkVZgfEPqs_bs1Vl7SQORRgFrTNos",
-            },
-            {
-              title: "Innovation",
-              desc: "AI fused with healthcare to prevent complications.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCn_vLB0cq2GpPOONQ3Mem0l6L41i7M5L8EiQwi94Q4mHjdSz6nFaARAr9jK9CElr7a6X0_yMCu4HJvqxl_klkzYZOyGru2B5c8QSsSKs_lS18EDoIuayBKnHchyGpJD1VlzWW0EI8ksrdefdZkDg3vTV2okUApwFHJV6eUP7OP4WpORnvV83hrGwOp6aF8sqD6eXWglSwr_uFiZtPJ8NX34T9D8IycuWBCzGCSOVSa0QUUKER0ldGhezaMS2LuvDBzJCaEXIOMSB4",
-            },
-            {
-              title: "Future Expansion",
-              desc: "Scaling to detect multiple conditions through biomarkers.",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDDMOK8Mj8bgULo5dj58w92NRblgveGkKEvYi5IR3je7JDKNqM9m7zxFyzUrJCRzeZWyHd9E6EJ_ny1ufOq_KDWkcsObEs8CU3Z8QRw0514blKG7LWksNsj5Dvn7865CC9ApAQ5SLgFCR4RWoOyfcOXByX7fF36_cu3ZiTAx2dhIukr9_dbbW-i1-7a3_6V2HdMGztUvKOGqKuVzakyoTqwx3Uqaqplv57F1QcqgZdAaJzj4VcPwHseKomBbFV3vhoJ5T_V5EuQkAU",
-            },
-          ],
-        },
+  title: "More Features",
+  items: [
+    {
+      title: "Multilingual Support",
+      desc: "Accessible to users worldwide with support for multiple languages.",
+      img: "/home7.jpg",
+    },
+    {
+      title: "Progress Tracking",
+      desc: "View your screening history and track your respiratory health journey over time.",
+      img: "/home8.jpg",
+    },
+    {
+      title: "Educational Resources",
+      desc: "Access a library of articles and information to illuminate respiratory health and disease.",
+      img: "/home9.jpg",
+    },
+    {
+      title: "Symptom Checker",
+      desc: "An interactive tool to log and understand your symptoms.",
+      img: "/home10.jpg",
+    },
+    {
+      title: "Doctor Connect",
+      desc: "Securely share your screening results with your healthcare provider.",
+      img: "/home11.jpg",
+    },
+    {
+      title: "Family Accounts",
+      desc: "Manage and monitor the respiratory health of your entire family from a single account.",
+      img: "/about2.jpg",
+    },
+    {
+      title: "Personalized Insights",
+      desc: "Receive AI-driven tips based on your health data and local environmental factors.",
+      img: "/home13.jpg",
+    },
+    {
+      title: "Community Forum",
+      desc: "Connect with other users to share experiences and support in a moderated environment.",
+      img: "/home14.jpg",
+    }
+  ],
+},
+        // {
+        //   title: "Vision for the Future",
+        //   items: [
+        //     {
+        //       title: "Accessibility",
+        //       desc: "Offline-first design empowers remote communities.",
+        //       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDzrHVOMozvTL1gI3V3QbyNd1-jQU_sREUEBzykdRYT_HQfXEGC1yMk62irSdzn1ruk-lrH4CAUm_xLPQUITpLx3PVNZB7iuQUBuNDgC5gN0uoX7H5jsSGnPp5yod2htfeTFMvyCcJ6ceWY7qzOl7lJED9Xjc6IPwGZmor6cEojfmOr9Q9mCAu0g7D6Os9Uu_EqfUjD7bwde6i5vmh1kLA_CbnYo5NNO1ilwkdqgo6TvrHOIuBJWykqNlnOCgApBHMd6dTBU5lAqwk",
+        //     },
+        //     {
+        //       title: "Trust",
+        //       desc: "100% on-device analysis ensures privacy.",
+        //       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCNkpnQg9WM_DfRWVrkWfqq-Gm0RGOTYmKZ2qG5qDQ6aP6Z3fy7Rvtq3Zm6RmRUDmgzvtc1znYPz9zdVPufL0fEV2jJbolTlJuYrfCJzfE28tjUnCr7EjbZBb_aiWAie3qNbzzEaGOA2Rd7YxdFWBu3GUtaxoFNgELbii6LngPDZX_TUWksTQF6jBeqcVotAEPZW1iNGChEIwqdrFd95ANDGvas8tbaYdCjvop1fWRsjJ89eQOkVZgfEPqs_bs1Vl7SQORRgFrTNos",
+        //     },
+        //     {
+        //       title: "Innovation",
+        //       desc: "AI fused with healthcare to prevent complications.",
+        //       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCn_vLB0cq2GpPOONQ3Mem0l6L41i7M5L8EiQwi94Q4mHjdSz6nFaARAr9jK9CElr7a6X0_yMCu4HJvqxl_klkzYZOyGru2B5c8QSsSKs_lS18EDoIuayBKnHchyGpJD1VlzWW0EI8ksrdefdZkDg3vTV2okUApwFHJV6eUP7OP4WpORnvV83hrGwOp6aF8sqD6eXWglSwr_uFiZtPJ8NX34T9D8IycuWBCzGCSOVSa0QUUKER0ldGhezaMS2LuvDBzJCaEXIOMSB4",
+        //     },
+        //     {
+        //       title: "Future Expansion",
+        //       desc: "Scaling to detect multiple conditions through biomarkers.",
+        //       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDDMOK8Mj8bgULo5dj58w92NRblgveGkKEvYi5IR3je7JDKNqM9m7zxFyzUrJCRzeZWyHd9E6EJ_ny1ufOq_KDWkcsObEs8CU3Z8QRw0514blKG7LWksNsj5Dvn7865CC9ApAQ5SLgFCR4RWoOyfcOXByX7fF36_cu3ZiTAx2dhIukr9_dbbW-i1-7a3_6V2HdMGztUvKOGqKuVzakyoTqwx3Uqaqplv57F1QcqgZdAaJzj4VcPwHseKomBbFV3vhoJ5T_V5EuQkAU",
+        //     },
+        //   ],
+        // },
       ].map((section, i) => (
         <section key={i} className="px-6 lg:px-50 py-10">
           <h2 className="text-2xl font-bold mb-6">{section.title}</h2>
@@ -138,7 +163,7 @@ export default function Home() {
                 />
                 <div>
                   <p className="text-base font-medium">{item.title}</p>
-                  <p className="text-sm text-[#cc8e99]">{item.desc}</p>
+                  <p className="text-sm text-gray-300">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -147,7 +172,7 @@ export default function Home() {
       ))}
 
       {/* Footer */}
-      <footer className="py-10 text-center text-[#cc8e99] text-sm">
+      <footer className="py-10 text-center text-gray-400 text-sm">
         © 2025 RespiraNet+. All rights reserved.
       </footer>
     </div>

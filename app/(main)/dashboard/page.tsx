@@ -14,7 +14,7 @@ export default function DashboardPage() {
   if (isLoading) return <div>Loading...</div>;
 
   return (
-    <div className="p-6 bg-[#00ffff] text-white min-h-screen flex flex-col lg:flex-row gap-6 lg:gap-10 px-4 lg:px-40">
+    <div className="p-6 bg-[#0d1225] text-white min-h-screen flex flex-col lg:flex-row gap-6 lg:gap-10 px-4 lg:px-40">
       {/* sidebar */}
       <div className="w-full lg:w-1/5 flex flex-col items-start p-4 h-fit  rounded-lg">
         <h4 className="text-xl font-bold mb-4">AnemoScan Admin</h4>

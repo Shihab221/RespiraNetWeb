@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navigation */}
-        <nav className="bg-[#00ffff] shadow-sm w-full h-auto px-10">
+        <nav className="bg-[#0d1225] shadow-sm w-full h-auto px-10">
               <div className="flex flex-col sm:flex-row py-4 justify-between h-auto items-center">
                 <div className="flex items-center">
                     <Image 
@@ -36,25 +36,25 @@ const Navbar = () => {
                     height={40}
                     className='mr-2'
                     />
-                  <h1 className="text-xl font-bold text-gray-900">RespiraNet+</h1>
+                  <h1 className="text-xl font-bold text-white">RespiraNet+</h1>
                 </div>
 
                 <div className='flex flex-col sm:flex-row justify-between w-full items-center'>
                     <div className="flex flex-col sm:flex-row sm:space-x-6 px-20">
-                    <Link href="/" className="border-transparent text-gray-900 text-md hover:text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 font-medium">
+                    <Link href="/" className="border-transparent text-white text-md hover:text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 font-medium">
                         Home
                     </Link>
-                    <Link href="/about" className="border-transparent text-gray-900 text-md hover:text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 font-medium">
+                    <Link href="/about" className="border-transparent text-white text-md hover:text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 font-medium">
                         About
                     </Link>
-                    <Link href="/privacy" className="border-transparent text-gray-900 text-md hover:text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 font-medium">
+                    <Link href="/privacy" className="border-transparent text-white text-md hover:text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 font-medium">
                         Privacy
                     </Link>
                     </div>
 
                     <div className='items-end py-2 sm:py-0 '>
                         <button 
-                            className="bg-[#af0421] rounded-lg px-4 h-10 text-sm font-bold cursor-pointer hover:bg-[#e53e3e] text-white"
+                            className="bg-[#2dcce8] rounded-lg px-4 h-10 text-sm font-bold cursor-pointer hover:bg-[#2dcce8] hover:opacity-80 text-white"
                             onClick={handleDownload}
                             >
                                 Download APK
