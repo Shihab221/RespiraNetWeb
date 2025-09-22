@@ -1,11 +1,11 @@
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import GoogleAnalyticsWrapper from "../components/GoogleAnalyticsWrapper";
+import Analytics from "../components/Analytics";
 import { Montserrat } from 'next/font/google';
 import Navbar from "@/components/Navbar";
+import Script from "next/script"; // ← Add this import
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +17,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const montserrat = Montserrat({ subsets: ['latin'],weight: ["100", "300", "400", "700", "900"], variable: '--font-montserrat' });
+const montserrat = Montserrat({ 
+  subsets: ['latin'],
+  weight: ["100", "300", "400", "700", "900"], 
+  variable: '--font-montserrat' 
+});
 
 export const metadata: Metadata = {
   title: "App Analytics Dashboard",
@@ -29,18 +33,31 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-    
-
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2X939C5YEW"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MKPBP09807', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}>
-        
-        
         {/* Main content */}
         <main>
           <Navbar />
           {children}
-          <GoogleAnalyticsWrapper />
+          <Analytics />
         </main>
       </body>
     </html>
