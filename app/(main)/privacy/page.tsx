@@ -5,7 +5,7 @@ import useTrackVisit from '@/hooks/useTrackVisit';
 export default function page() {
   useTrackVisit();
   return (
-    <div className="min-h-screen bg-gray-50 text-white py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 text-gray-900 py-12 px-4 sm:px-6 lg:px-8">
       <Head>
         <title>RespiraNet+ — Privacy Policy</title>
         <meta name="description" content="Privacy Policy for RespiraNet — AI-powered respiratory health screening app. Explains what data is collected, how it's used, and user rights." />
@@ -119,7 +119,7 @@ export default function page() {
           </p>
 
           <footer className="mt-6 text-sm text-gray-500">
-            <p>App: RespiraNet</p>
+            <p>App: RespiraNet+</p>
             <p>Developer: Isha Das & Shihab Ahemed</p>
           </footer>
         </section>

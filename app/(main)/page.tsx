@@ -78,6 +78,11 @@ export default function Home() {
       title: "Privacy & Encryption",
       desc: "Your data is yours. We employ end-to-end encryption and give you full control over your personal information.",
       img: "/privacy.jpg",
+    },
+    {
+      title: "Historical Analysis",
+      desc: "Track and compare past diagnostic results over time with an intuitive visual timeline, highlighting trends, improvements, or worsening respiratory health.",
+      img: "/historical.jpg",
     }
   ],
 },

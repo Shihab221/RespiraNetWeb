@@ -34,7 +34,7 @@ export default function About() {
             className="flex flex-col items-center justify-center text-center px-4 py-48 rounded-xl bg-cover bg-center"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url('https://lh3.googleusercontent.com/aida-public/AB6AXuAA2SZUxpddNrEscS1UTya04rac8WL03pKUFm_CNMizBXXu1bSHOmN4gKEtVw8FvUEampRPBApWXNeLKv1QFu1rP5l7NCB3jr6nuuDVz8A8NDJL1Pc_wBVOTVPSxpXZ7-mn-ifDyebV44EoD5-_FWHctNYvTtnyhU3kGVOZPrKvyDTXI6tRWEdP_74YMsogD5vsfDoquKLJw0RHn4HZ4sF4v7JlN7OhKAreAqp6NURQCfysdr_OLAS1gsLUUSYeDaUrODpPyjByfiw')",
+                "url('/about1.jpg')",
             }}
           >
             <h1 className="text-3xl sm:text-5xl font-black max-w-3xl">
@@ -77,11 +77,11 @@ export default function About() {
               ].map((item, i) => {
                 const Icon = item.icon;
                 return(
-                <div key={i} className="flex flex-col gap-2 rounded-lg border border-[#663336] bg-[#331a1b] p-4">
+                <div key={i} className="flex flex-col gap-2 rounded-lg border border-[#43888a] bg-[#0c1e2e] p-4">
                   
                   <Icon className="text-white mb-2" size={24} />
                   <h3 className="text-base font-bold">{item.title}</h3>
-                  <p className="text-sm text-[#c89295]">{item.desc}</p>
+                  <p className="text-sm text-gray-300">{item.desc}</p>
                 </div>
               )})}
             </div>
@@ -93,7 +93,8 @@ export default function About() {
             className="flex flex-col items-center justify-center text-center px-4 py-36 rounded-xl bg-cover bg-center"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQRe52Bs7aBW9lzlE3xF6PfbvCRnyJwAcTY3aInTkgvF8sCaqb9YdrG61FcZoEIlNpI2TSmUI2gwvaN5kf-RNw6pQI5XKxaa3tqebN1Q18ykAS_cnQFuMMdF8WPf8X__MudtqK2qzYfYYvcWcAQ0qCD44Q_NXTh_e1SVty2xqiy4x2yHCgFhGDnwoxydTdlhuk9cQg7Ww-w6FCfh4RjT6soypk2AZgM6tB5d1P-62zwOGjKo5sX4CgUVAQPsd9xPAW5MFaozgrXWQ')",
+                "url('/about2.jpg')",
+                
             }}
           >
             <h1 className="text-3xl sm:text-5xl font-black max-w-3xl">See Health Differently</h1>
@@ -112,9 +113,9 @@ export default function About() {
                 { stage: "App Launch", year: "2025" },
                 { stage: "Global Expansion", year: "2025" },
               ].map((j, i) => (
-                <div key={i} className="flex justify-between border-l-2 border-[#663336] pl-4">
+                <div key={i} className="flex justify-between border-l-2 border-[#43888a] pl-4">
                   <p className="font-medium">{j.stage}</p>
-                  <p className="text-[#c89295]">{j.year}</p>
+                  <p className="text-gray-300">{j.year}</p>
                 </div>
               ))}
             </div>
@@ -132,10 +133,10 @@ export default function About() {
               ].map((v, i) => {
                 const Icon = v.icon;
                 return(
-                <div key={i} className="flex flex-col gap-2 rounded-lg border border-[#663336] bg-[#331a1b] p-4">
+                <div key={i} className="flex flex-col gap-2 rounded-lg border border-[#43888a] bg-[#0c1e2e] p-4">
                   <Icon className="text-white mb-2" size={24} />
                   <h3 className="text-base font-bold">{v.title}</h3>
-                  <p className="text-sm text-[#c89295]">{v.desc}</p>
+                  <p className="text-sm text-gray-300">{v.desc}</p>
                 </div>
               )})}
             </div>
@@ -149,7 +150,7 @@ export default function About() {
                 { image:'/isha das.png', name: "Isha Das", role: "Lead developer  - Isha Das (Founder of Company ID Tech Solutions and LuminaTech)", desc: '/isha-das-06', mail: 'isha@idtechsolutionsbd.com '},
                 { image:'/shihab.jpg', name: "Shihab Ahemed", role: "Contributing Developer", desc: '/shihab221', mail: 'ashihab205@gmail.com' },
               ].map((f, i) => (
-                <div key={i} className="flex justify-between items-center p-4 rounded-xl border border-[#663336] bg-[#331a1b]">
+                <div key={i} className="flex justify-between items-center p-4 rounded-xl border border-[#43888a] bg-[#0c1e2e]">
                   
                   <div className="text-center flex flex-col items-start">
                     <Image
@@ -157,13 +158,13 @@ export default function About() {
                       alt={f.name}
                       width={60}
                       height={60}
-                      className="rounded-full border-2 border-[#c89295] mb-1"
+                      className="rounded-full border-2 border-gray-300 mb-1"
                     />
                     
                     <p className="text-lg font-bold mb-1">{f.name}</p>
-                    <p className="text-[#c89295] text-sm">{f.role}</p>
-                    <p className="text-[#c89295] text-sm">Github: {f.desc}</p>
-                    <p className="text-[#c89295] text-sm">E-mail: {f.mail}</p>
+                    <p className="text-gray-300 text-sm">{f.role}</p>
+                    <p className="text-gray-300 text-sm">Github: {f.desc}</p>
+                    <p className="text-gray-300 text-sm">E-mail: {f.mail}</p>
                   </div>
                   
                 </div>
